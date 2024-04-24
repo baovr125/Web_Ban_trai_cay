@@ -1,0 +1,244 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    *
+    {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins' ,sans-serif;
+    }
+    :root{
+        --red:#ff0000;
+        --orange:#ff9100;
+        --yellow:#fff200;
+        --yellow:#d7fc03;
+        --green:#00ff00;
+        --blue:#0000ff;
+        --white:#fff;
+        --gray:#9e9e9e;
+        --black:#000;
+    }
+    a{
+        text-decoration: none;
+        color: var(--white);
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    body{
+        color: var(--black);
+        background-image: url("tải xuống.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 50px;
+    }
+    .nav .logo img{
+        width: 40px;
+        margin-left: 120px;
+        border-radius: 30px;
+        transition: 0.5s ease-in-out;
+    }
+    .nav .logo{
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    .nav .logo img:hover{
+        width: 140px;
+    }
+    .btn{
+        padding: 10px 0;
+        width: 150px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        font-size: 16px;
+        background: rgba(225,225,225,0.7);
+        transition: 0.3s ease;
+    }
+    .white-btn{
+        background: rgba(225,225,225,1.2);
+    }
+    .white-btn:hover{
+        background: rgba(225,225,225,1.5);
+    }
+    .btn:hover{
+        background: rgba(225,225,225,0.9);
+    }
+    #loginbtn{
+        margin-right: 10px;
+    }
+    .form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 520px;
+        width: 380px;
+        background: rgba(225,225,225,0.6);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .login{
+        position: relative;
+        display: flex;
+        padding: 40px 0;
+    }
+    .left{
+        position: absolute;
+        width: 380px;
+        height: 430px;
+        left: 1;
+        padding: 0 20px;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+    }
+    .right{
+        position: absolute;
+        right: -390px;
+        width: 380px;
+        padding: 0 20px;
+        height: 430px;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+    }
+    .top{
+        padding: 13px 0;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .top h2{
+        font-size: 32px;
+        margin-top: 5px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        color: var(--white);
+    }
+    .input{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .input input{
+        width: 100%;
+        height: 40px;
+        background: rgba(225,225,225,0.4);
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        padding: 0 20px;
+        color: var(--black);
+        font-size: 17px;
+    }
+    input:hover{
+        background: rgba(225,225,225,0.7);
+    }
+    .input span{
+        position: absolute;
+        right: 20px;
+        top: 7px;
+    }
+    span i{
+        font-size: 18px;
+        cursor: pointer;
+    }
+    ::placeholder{
+        font-size: 15px;
+    }
+    .forget{
+        margin-top: -10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px;
+        color: var(--white);
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    button{
+        padding: 11px 10px;
+        width: 170px;
+        font-size: 17px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        background: rgba(225,225,225,0.8);
+        margin-bottom: 7px;
+        transition: 0.3s;
+    }
+    button:hover{
+        background:var(--white);
+        transform: translateY(-5px);
+    }
+    .or p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .or .with i{
+        display: inline-block;
+        margin: 0 20px;
+        font-size: 27px;
+        cursor: pointer;
+        padding: 7px;
+        border-radius:15px;
+        transition: 0.3 all;
+    }
+
+
+
+    .fa-brands.fa-facebook:hover {
+        background-color: #293fff; /* Màu của Facebook khi hover */
+    }
+
+    .fa-brands.fa-google:hover {
+        background-color: #ff3522; /* Màu của Google khi hover */
+    }
+
+    .fa-brands.fa-tiktok:hover {
+        background-color: #000000; /* Màu của TikTok khi hover */
+    }
+
+
+
+    .gh:hover{
+        background-color:#000000;
+        color: var(--white);
+    }
+    .two-input{
+        gap: 10px;
+        display: flex;
+    }
+
+
+
+    @media only screen and (min-width:64.1875em){
+        video{
+        height: 1%;
+        width: 100%;
+        }
+    
+    }
+    @media only screen and (min-width:46.1875em) and (max-width:63.9375em){
+        video{
+            position: fixed;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #000;
+            height: 1%;
+            display: block;
+        }
+    }

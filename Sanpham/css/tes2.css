@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+*::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+:root {
+    --main-color: #29d76e;
+    --text-color: #1e1c2a;
+    --bg-color: #fff;
+    --big-font: 4rem;
+    --h2-gont: 2.24rem;
+    --pfont: 0.9rem;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    /* align-items: center; */
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 5px 10px;
+    box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+.navbar-nav.ml-auto {
+    justify-content: flex-end;
+}
+.navbar-nav.ml-auto {
+    justify-content: flex-start; /* Thay đổi từ flex-end thành flex-start */
+}
+
+.container .row.align-items-center {
+    justify-content: flex-end; /* Đảm bảo các phần tử nằm bên phải */
+}
+
+

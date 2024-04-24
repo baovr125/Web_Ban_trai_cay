@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="Website Icon" type="png" href="https://i.pinimg.com/564x/4e/d5/39/4ed5397f808ef00d6e0f1ade963a8215.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video style=" width:100%;" src="video.mp4" autoplay loop muted></video>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href="#">
+                    <a href="../HTML/home1.html" style="cursor:pointer; font-size: 36px; font-family:cursive; " class="logo"><img
+                            style="border-radius: 100% 100%;" src="../singnin_and_register/vietquatmy.png">NB TRÁI CÂy
+                    </a>
+                </a>
+            </nav>
+            <div class="nav-right">
+                <a href="#" id="login-link">
+                    <button style="font-family:cursive; " class="btn white-btn">LOGIN</button>
+                </a>
+                <a href="#" id="register-link">
+                    <button style="font-family:cursive; " class="btn">REGISTER</button>
+                </a>
+            </div>
+        </header>
+
+        <div class="form">
+            <div class="login">
+                <div class="left" id="login">
+                    <form id="login-form">
+                        <div class="top">
+                            <p style="font-family:cursive; ">Do not have an account sign in? <a
+                                    style="font-family:cursive; " href="#" id="register-link">register</a></p>
+                            <h2>Login</h2>
+                        </div>
+                    
+                        <div class="input">
+                            <input style="font-family:cursive; " type="text" name="username" placeholder="Username"
+                                required>
+                            <span> <i class="fa-solid fa-user"></i></span>
+                        </div>
+                        <br>
+                        <div class="input">
+                            <input style="font-family:cursive; " type="password" name="password" id="login-password"
+                                placeholder="Password" required>
+                            <span><i class="fa-solid fa-eye" id="login-bg" aria-hidden="true" onclick="showHint('login')"></i></span>
+                        </div>
+                        <br>
+                        <div class="forget">
+                            <label style="font-family:cursive; font-size: 15px; "><input
+                                    type="checkbox">remember</label>
+                            <p class="mb-0 mt-4 text-center"><a style="font-family:cursive; " href="#"
+                                    class="link">Forgot password?</a></p>
+                        </div>
+                        <div class="button">
+                            <button style="font-family:cursive; " id="login-submit">Login</button>
+                        </div>
+                        <div class="or">
+                            <p>or</p>
+                            <div class="with">
+                                <p class="mb-0 mt-4 text-center">
+                                    <a href="#" class="link"><i class="fa-brands fa-facebook fb"></i></a>
+                                    <a href="#" class="link"><i class="fa-brands fa-google fb"></i></a>
+                                    <a href="#" class="link"><i class="fa-brands fa-tiktok fb"></i></a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="right" id="register">
+
+                    <form id="register-form">
+                        <div class="top">
+                            <a></a>
+                            <p style="font-family:cursive; ">Do you already have a login account?
+                                <a style="font-family:cursive; " href="#" id="login-link">login</a></p>
+                            <h2 style="font-family:cursive; ">register</h2>
+                        </div>
+                        <br>
+                        <div class="two-input">
+                            <div class="input">
+                                <input style="font-family:cursive; " type="text" name="username"
+                                    placeholder="User name" required>
+                                <span> <i class="fa-solid fa-user"></i></span>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="input">
+                            <input style="font-family:cursive; " type="email" name="email" placeholder="Email"
+                                required>
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                        </div>
+                        <br>
+                        <div class="input">
+                            <input style="font-family:cursive; " type="password" name="password" id="register-password"
+                                placeholder="Password" required>
+                            <span><i class="fa-solid fa-eye" id="register-bg" aria-hidden="true" onclick="showHint('register')"></i></span>
+                        </div>
+                        <br>
+                        <div class="forget">
+                            <label style="font-family:cursive; "><input type="checkbox">remember</label>
+                            <p style="font-family:cursive; " class="mb-0 mt-4 text-center"><a
+                                    style="font-family:cursive; " href="#" class="link">term & conditions</a></p>
+                        </div>
+                        <div class="button">
+                            <button style="font-family:cursive; " id="register-submit">register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../singnin_and_register/log_in.js"></script>
+    <script>
+        var st = false;
+        function showHint(formId){
+            const passwordInput = document.getElementById(formId + '-password');
+            const bgIcon = document.getElementById(formId + '-bg');
+            if(st){
+                passwordInput.setAttribute('type','password');
+                bgIcon.style.color = 'black';
+                st = false;
+            }
+            else{
+                passwordInput.setAttribute('type','text');
+                bgIcon.style.color = 'white';
+                st = true;
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
